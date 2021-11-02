@@ -1,0 +1,4 @@
+/__pycache__/
+/proto/*pb2*
+/proto/__pycache__/
+/venv/

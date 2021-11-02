@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+
+service Chat {
+    rpc Communicate (stream Message) returns (stream Message) {}
+}
+
+message Message {
+    google.protobuf.Any detail = 1;
+}
+
+message InternalMessage {
+    string text = 1;
+}
